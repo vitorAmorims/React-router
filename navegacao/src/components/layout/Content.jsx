@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import "./Content.css";
 import Home from '../../views/exemples/Home';
 import About from '../../views/exemples/About';
+import Param from '../../views/exemples/Param';
 
 const Content = (props) => {
   return (
@@ -10,6 +11,9 @@ const Content = (props) => {
       <Switch>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/param/:id">
+          <Param />
         </Route>
         <Route path="/">
           <Home />
