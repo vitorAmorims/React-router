@@ -4,7 +4,16 @@ import './Menu.css'
 const Menu = (props) => {
   return (
     <aside className="Menu">
-      <h1>componente  Menu</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">Sobre</a>
+          </li>
+        </ul>
+      </nav>
     </aside>
   );
 };
